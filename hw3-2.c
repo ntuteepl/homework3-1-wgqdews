@@ -17,8 +17,8 @@ for(j=0;j<2;j++)
       d[i]=d[i+1];
       d[i+1]=a;
   }
-for(i=0;i<3;i++)
-	if(d[i]<=s[i])
+for(i=0;i<2;i++)
+	if(d[i]<=s[i+1])
 	num--;
 printf("%d",num);
 return 0;
