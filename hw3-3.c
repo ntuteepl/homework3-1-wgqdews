@@ -14,6 +14,7 @@ int main(int argc, char *argv[]) {
 		printf("%d",n1);
 	else if(s1==s2){
 		if(n1>n2)
+		
 			printf("%d",n2);
 		if(n1<n2)
 			printf("%d",n1);
