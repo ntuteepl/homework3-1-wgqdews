@@ -4,14 +4,24 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(int argc, char *argv[]) {
-int num=3,s1,s2,s3,d1,d2,d3;
-scanf("%d%d%d%d%d%d",&s1,&d1,&s2,&d2,&s3,&d3);
-if(s1>=d2||s1>=d3)
-num--;
-if(s2>=d1||s2>=d3)
-num--;
-if(s3>=d1&&s3>=d2)
-num--;
+int i,j,num=3,s[3],d[3],a;
+for(i=0;i<3;i++)
+  scanf("%d%d",&s[i],&d[i]);
+for(i=0;i<3;i++)
+  for(j=0;j<3;j++){
+    if(s[i]<s[i+1]){
+      a=s[i];
+      s[i]=s[i+1];
+      s[i+1]=a;
+      a=d[i];
+      d[i]=d[i+1];
+      d[i+1]=a;
+  }
+}
+for(i=0;i<2;i++)
+  if(d[i]<=s[i+1])
+    num--;
+
 printf("%d",num);
 return 0;
 }
