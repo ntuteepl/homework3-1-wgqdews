@@ -10,7 +10,7 @@ if(s1<d2||s1<d3)
 num++;
 if(s2<d1||s2<d3)
 num++;
-if(s3<d1||s3<d2)
+if(s3<d1&&s3<d2)
 num++;
 printf("%d",num);
 return 0;
