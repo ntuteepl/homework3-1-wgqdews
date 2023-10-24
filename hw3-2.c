@@ -19,7 +19,7 @@ for(j=0;j<2;j++)
   }
 	if(d[0]<=s[1])
 	num--;
-	if(d[0]<=s[2])
+	if(d[0]<=s[2] || d[1]<=s[2])
 	num--;
 printf("%d",num);
 return 0;
